@@ -1,15 +1,15 @@
-# OctoClaw-ESP32 架构设计文档（设备侧执行裁剪版）
+# TinyClaw-ESP32 架构设计文档（设备侧执行裁剪版）
 
-> **OctoClaw-ESP32 = OctoClaw 母架构在 MCU / FreeRTOS / ESP-IDF 世界中的设备侧实现。**  
-> 它必须继承 OctoClaw 的协议语义、会话语义、零信任边界与 OctoWire / MCP 协同方式，但会根据 **MCU 资源、Flash / PSRAM、外设中断、OTA 与设备安全** 做最强裁剪：**保留本地执行与设备自治，复杂大脑能力上移到 Pi / Rust / 4j。**
+> **TinyClaw-ESP32 = TinyClaw 母架构在 MCU / FreeRTOS / ESP-IDF 世界中的设备侧实现。**  
+> 它必须继承 TinyClaw 的协议语义、会话语义、零信任边界与 OctoWire / MCP 协同方式，但会根据 **MCU 资源、Flash / PSRAM、外设中断、OTA 与设备安全** 做最强裁剪：**保留本地执行与设备自治，复杂大脑能力上移到 Pi / Rust / 4j。**
 
-[![ESP32](https://img.shields.io/badge/OctoClaw--ESP32-C%2FC%2B%2B_ESP--IDF-CC3333.svg)](#)
+[![ESP32](https://img.shields.io/badge/TinyClaw--ESP32-C%2FC%2B%2B_ESP--IDF-CC3333.svg)](#)
 [![FreeRTOS](https://img.shields.io/badge/FreeRTOS-事件驱动-green.svg)](#)
 [![Compat](https://img.shields.io/badge/OpenClaw-协议兼容-blue.svg)](#)
 
 ---
 
-**文档约定**：本文按 Rust 母架构同步 ESP32 版本，但明确设备侧与上游大脑的边界；「ESP32」即 OctoClaw-ESP32；「上游」通常指 Pi / Rust / 4j 节点。
+**文档约定**：本文按 Rust 母架构同步 ESP32 版本，但明确设备侧与上游大脑的边界；「ESP32」即 TinyClaw-ESP32；「上游」通常指 Pi / Rust / 4j 节点。
 
 **ESP32 的裁剪原则**：
 - **必须保留**：设备身份、Session / command 对应关系、OctoWire / MCP 协议、零信任设备边界、局部触手执行、OTA 与安全更新；
@@ -33,10 +33,10 @@
 ## 目录
 
 ### Part I：战略全景与核心理念（战略与 ESP32 体现）
-- 1. 为什么需要 OctoClaw-ESP32
-- 2. OctoClaw-ESP32 在五版本中的位置
+- 1. 为什么需要 TinyClaw-ESP32
+- 2. TinyClaw-ESP32 在五版本中的位置
 - 3. 三条硬约束与 ESP32 总架构
-- 4. OpenClaw × ZeroClaw × OctoClaw 的分层继承（ESP32 版）
+- 4. OpenClaw × ZeroClaw × TinyClaw 的分层继承（ESP32 版）
 
 ### Part II：章鱼架构——生物神经映射（战略与 ESP32 体现）
 - 6. 为什么是章鱼（从隐喻到实现）
@@ -62,7 +62,7 @@
 
 ### Part IV：OpenClaw DNA 与五版本（ESP32 为主）
 - 19. OpenClaw 共同 DNA（8 条）在 ESP32 的体现
-- 20. OctoClaw-ESP32（设备侧执行裁剪版）
+- 20. TinyClaw-ESP32（设备侧执行裁剪版）
 
 ### Part V：进阶能力在 ESP32 的体现
 - 30A. 四轴智能路由
@@ -98,9 +98,9 @@
 
 # Part I：战略全景与核心理念（战略与 ESP32 体现）
 
-## 1. 为什么需要 OctoClaw-ESP32
+## 1. 为什么需要 TinyClaw-ESP32
 
-ESP32 版本负责把 OctoClaw 带到真实硬件末梢：
+ESP32 版本负责把 TinyClaw 带到真实硬件末梢：
 
 - 接管 GPIO、传感器、摄像头、麦克风、继电器、显示器等设备；
 - 在本地执行低时延、强实时、强安全的动作；
@@ -119,11 +119,11 @@ ESP32 版本负责把 OctoClaw 带到真实硬件末梢：
 
 表格说明：左列给目标，第二列给约束，第三列给 ESP32 本地落点，可直接用于设备验收。
 
-## 2. OctoClaw-ESP32 在五版本中的位置
+## 2. TinyClaw-ESP32 在五版本中的位置
 
 ### 2.1 ESP32 的职责
 
-ESP32 是 OctoClaw 体系中的 **设备触手节点**：
+ESP32 是 TinyClaw 体系中的 **设备触手节点**：
 
 - 承担本地传感与执行；
 - 通过上游下发的目标与策略完成局部执行；
@@ -135,11 +135,11 @@ ESP32 是 OctoClaw 体系中的 **设备触手节点**：
 ```mermaid
 flowchart LR
     subgraph spectrum [部署谱系]
-        E["OctoClaw-Edge<br/>Zig 超边缘"]
-        ESP["OctoClaw-ESP32<br/>设备侧执行裁剪版"]
-        PI["OctoClaw-Pi<br/>Python 轻量全栈"]
-        R["OctoClaw<br/>Rust 旗舰"]
-        J["OctoClaw-4j<br/>Java 企业"]
+        E["TinyClaw-Edge<br/>Zig 超边缘"]
+        ESP["TinyClaw-ESP32<br/>设备侧执行裁剪版"]
+        PI["TinyClaw-Pi<br/>Python 轻量全栈"]
+        R["TinyClaw<br/>Rust 旗舰"]
+        J["TinyClaw-4j<br/>Java 企业"]
         E --> ESP --> PI --> R --> J
     end
 ```
@@ -188,13 +188,13 @@ ESP32 不应直接相信上游模型输出，而应始终经过本地边界：
 | Mantle | NVS 热状态、环形缓冲、少量摘要缓存 |
 | Chromatophore | 本地策略阈值、风险判断、回复等级 |
 
-## 4. OpenClaw × ZeroClaw × OctoClaw 的分层继承（ESP32 版）
+## 4. OpenClaw × ZeroClaw × TinyClaw 的分层继承（ESP32 版）
 
 | 来源 | 继承内容 | ESP32 的裁剪 |
 |------|----------|--------------|
 | OpenClaw | 会话语义、skill / tool / policy 的 scope 概念 | 本地保留 manifest，不解析完整 Workspace |
 | ZeroClaw | lean runtime、可替换 channel / transport、设备 profile 思路 | 用 FreeRTOS task、静态缓冲实现 |
-| OctoClaw | 五器官、零信任、OctoWire、生命周期 | 保留设备侧最小闭环，上移大脑能力 |
+| TinyClaw | 五器官、零信任、OctoWire、生命周期 | 保留设备侧最小闭环，上移大脑能力 |
 
 ---
 
@@ -222,10 +222,10 @@ ESP32 的模块划分围绕“设备触手节点、HAL 主战场、设备身份�
 
 **工程结构**：
 
-OctoClaw-ESP32 严格参考 **ESP-IDF 工程结构**（如 `xiaozhi-esp32`），采用**目录划分模块**。
+TinyClaw-ESP32 严格参考 **ESP-IDF 工程结构**（如 `xiaozhi-esp32`），采用**目录划分模块**。
 
 ```text
-octoclaw-esp32/
+tinyclaw-esp32/
   docs/
   CMakeLists.txt             # 项目根 CMake
   sdkconfig.defaults         # 默认配置
@@ -242,7 +242,7 @@ octoclaw-esp32/
     6_local_agent/           # 本地 Agent 逻辑
     extensions/              # 扩展目录（随 main 组件编译）
       channels/              # 外部渠道接入扩展
-      octoclaw/              # 设备治理扩展（策略/档位/补偿等）
+      tinyclaw/              # 设备治理扩展（策略/档位/补偿等）
   components/                # 通用组件（ESP-IDF components）
     4_hal/                   # 硬件抽象层
     7_espnow/                # ESP-NOW 协议栈
@@ -255,11 +255,11 @@ octoclaw-esp32/
 
 **扩展插件命名示例**：
 
-- `octoclaw-esp32/main/extensions/channels/douyin`
-- `octoclaw-esp32/main/extensions/channels/meituan`
-- `octoclaw-esp32/main/extensions/channels/rednode`
-- `octoclaw-esp32/main/extensions/channels/kuaishou`
-- `octoclaw-esp32/main/extensions/channels/amap`
+- `tinyclaw-esp32/main/extensions/channels/douyin`
+- `tinyclaw-esp32/main/extensions/channels/meituan`
+- `tinyclaw-esp32/main/extensions/channels/rednode`
+- `tinyclaw-esp32/main/extensions/channels/kuaishou`
+- `tinyclaw-esp32/main/extensions/channels/amap`
 
 **全量翻译清单**：`docs/openclaw-extension-translation-matrix.md`（由 `scripts/translate_openclaw_extensions.py` 自动生成）。
 
@@ -488,7 +488,7 @@ ESP32 的定义文件同步重点是把上游完整定义可靠地折叠为设�
 | 可迁移 / 可诊断 | capability check、doctor、OTA report |
 | 人机协作 | pairing、确认、状态灯 / 屏幕 / 语音反馈 |
 
-## 20. OctoClaw-ESP32（设备侧执行裁剪版）
+## 20. TinyClaw-ESP32（设备侧执行裁剪版）
 
 ### 20.1 目标态
 
@@ -631,7 +631,7 @@ ESP32 的 a11y 目标态是把可访问性落实到设备反馈：灯光、蜂�
 
 ## 38. OctoWire（ESP32）
 
-OctoClaw-ESP32 在 OctoWire 中承担设备触手节点、能力声明节点和故障 / 回执上报节点职责。它保留共同协议中的身份、会话、能力、回执和安全边界，但不承担完整大脑、完整记忆和重型治理。
+TinyClaw-ESP32 在 OctoWire 中承担设备触手节点、能力声明节点和故障 / 回执上报节点职责。它保留共同协议中的身份、会话、能力、回执和安全边界，但不承担完整大脑、完整记忆和重型治理。
 
 ### 38.1 目标态 / 当前真实骨架 / 平台边界
 
@@ -887,10 +887,10 @@ ADR 应回答：某个 manifest、threshold、pairing、ota、telemetry、sessio
 
 ### 52.1 统一目录结构
 
-遵循 OctoClaw 全生态规范，OctoClaw-ESP32 采用 **ESP-IDF Component（Directory-based）** 结构，并在根目录下维护 `extensions/` 目录用于存放具体的业务插件组件。
+遵循 TinyClaw 全生态规范，TinyClaw-ESP32 采用 **ESP-IDF Component（Directory-based）** 结构，并在根目录下维护 `extensions/` 目录用于存放具体的业务插件组件。
 
 ```text
-octoclaw-esp32/
+tinyclaw-esp32/
   CMakeLists.txt           # 项目构建配置
   main/                    # 主程序
   extensions/              # 扩展插件目录
@@ -938,8 +938,8 @@ octoclaw-esp32/
 ```c
 #define OCTO_RUN_MODE        "iot"
 #define OCTO_PROFILE         "esp32"
-#define OCTO_DEVICE_ID       "octoclaw-esp32-01"
-#define OCTO_UPSTREAM_URI    "wss://octoclaw.local/ws"
+#define OCTO_DEVICE_ID       "tinyclaw-esp32-01"
+#define OCTO_UPSTREAM_URI    "wss://tinyclaw.local/ws"
 #define OCTO_ALLOW_OTA       1
 #define OCTO_LOCAL_L2        0
 #define OCTO_HITL_MODE       "upstream"

@@ -1,6 +1,6 @@
 /**
  * @file audit_log.h
- * @brief V3 审计：关键操作日志环，供 audit_report 与可追溯使用（落点 extensions/octoclaw/audit）
+ * @brief V3 审计：关键操作日志环，供 audit_report 与可追溯使用（落点 extensions/tinyclaw/audit）
  *
  * 与 agent_lite、task_step 协同；不改变主循环，仅扩展治理能力。
  */

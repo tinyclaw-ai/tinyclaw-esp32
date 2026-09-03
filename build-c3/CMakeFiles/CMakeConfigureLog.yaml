@@ -58,7 +58,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/esp/esp-idf/components/espcoredump/git"
@@ -187,7 +187,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/esp/esp-idf/components/espcoredump/uname"
@@ -333,7 +333,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/esp/esp-idf/components/espcoredump/ninja-build"
@@ -546,7 +546,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc"
@@ -721,7 +721,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/4.2.3/CompilerIdC/a.out
+        /Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/4.2.3/CompilerIdC/a.out
       
   -
     kind: "find-v1"
@@ -780,7 +780,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-ar"
     search_context:
@@ -893,7 +893,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib"
     search_context:
@@ -1006,7 +1006,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-strip"
     search_context:
@@ -1119,7 +1119,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-ld"
     search_context:
@@ -1232,7 +1232,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-nm"
     search_context:
@@ -1345,7 +1345,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-objdump"
     search_context:
@@ -1458,7 +1458,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-objcopy"
     search_context:
@@ -1571,7 +1571,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-readelf"
     search_context:
@@ -1684,7 +1684,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-dlltool"
@@ -1722,7 +1722,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-dlltool"
       - "/opt/anaconda3/bin/riscv32-esp-elf-dlltool"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-dlltool"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-dlltool"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-dlltool"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-dlltool"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/dlltool"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/dlltool"
@@ -1759,7 +1759,7 @@ events:
       - "/opt/podman/bin/dlltool"
       - "/opt/anaconda3/bin/dlltool"
       - "/opt/anaconda3/condabin/dlltool"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/dlltool"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/dlltool"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/dlltool"
     found: false
     search_context:
@@ -1872,7 +1872,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-addr2line"
     search_context:
@@ -1985,7 +1985,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-tapi"
@@ -2023,7 +2023,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-tapi"
       - "/opt/anaconda3/bin/riscv32-esp-elf-tapi"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-tapi"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-tapi"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-tapi"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-tapi"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/tapi"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/tapi"
@@ -2060,7 +2060,7 @@ events:
       - "/opt/podman/bin/tapi"
       - "/opt/anaconda3/bin/tapi"
       - "/opt/anaconda3/condabin/tapi"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/tapi"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/tapi"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/tapi"
     found: false
     search_context:
@@ -2175,7 +2175,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar-13.2"
@@ -2213,7 +2213,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ar-13.2"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ar-13.2"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ar-13.2"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-13.2"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-13.2"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ar-13.2"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar-13"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ar-13"
@@ -2250,7 +2250,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ar-13"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ar-13"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ar-13"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-13"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-13"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ar-13"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar13"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ar13"
@@ -2287,7 +2287,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ar13"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ar13"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ar13"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar13"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar13"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ar13"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar"
     search_context:
@@ -2402,7 +2402,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib-13.2"
@@ -2440,7 +2440,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ranlib-13.2"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ranlib-13.2"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ranlib-13.2"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-13.2"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-13.2"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ranlib-13.2"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib-13"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ranlib-13"
@@ -2477,7 +2477,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ranlib-13"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ranlib-13"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ranlib-13"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-13"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-13"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ranlib-13"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib13"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ranlib13"
@@ -2514,7 +2514,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ranlib13"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ranlib13"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ranlib13"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib13"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib13"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ranlib13"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib"
     search_context:
@@ -2626,7 +2626,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-g++"
@@ -2801,7 +2801,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/4.2.3/CompilerIdCXX/a.out
+        /Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/4.2.3/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
@@ -2862,7 +2862,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar-13.2"
@@ -2900,7 +2900,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ar-13.2"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ar-13.2"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ar-13.2"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-13.2"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-13.2"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ar-13.2"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar-13"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ar-13"
@@ -2937,7 +2937,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ar-13"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ar-13"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ar-13"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-13"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-13"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ar-13"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar13"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ar13"
@@ -2974,7 +2974,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ar13"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ar13"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ar13"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar13"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar13"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ar13"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar"
     search_context:
@@ -3089,7 +3089,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib-13.2"
@@ -3127,7 +3127,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ranlib-13.2"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ranlib-13.2"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ranlib-13.2"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-13.2"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-13.2"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ranlib-13.2"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib-13"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ranlib-13"
@@ -3164,7 +3164,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ranlib-13"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ranlib-13"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ranlib-13"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-13"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-13"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ranlib-13"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib13"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ranlib13"
@@ -3201,7 +3201,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ranlib13"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ranlib13"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ranlib13"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib13"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib13"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ranlib13"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib"
     search_context:
@@ -3313,7 +3313,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc"
@@ -3449,7 +3449,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar-"
@@ -3487,7 +3487,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ar-"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ar-"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ar-"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ar-"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar-"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ar-"
@@ -3524,7 +3524,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ar-"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ar-"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ar-"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ar-"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ar-"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar"
     search_context:
@@ -3639,7 +3639,7 @@ events:
       - "/opt/podman/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/"
     searched_directories:
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib-"
@@ -3677,7 +3677,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ranlib-"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ranlib-"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ranlib-"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ranlib-"
       - "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib-"
       - "/Users/wandl/esp/esp-idf/components/espcoredump/riscv32-esp-elf-gcc-ranlib-"
@@ -3714,7 +3714,7 @@ events:
       - "/opt/podman/bin/riscv32-esp-elf-gcc-ranlib-"
       - "/opt/anaconda3/bin/riscv32-esp-elf-gcc-ranlib-"
       - "/opt/anaconda3/condabin/riscv32-esp-elf-gcc-ranlib-"
-      - "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-"
+      - "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/riscv32-esp-elf-gcc-ranlib-"
       - "/Users/wandl/Java/apache-maven-3.9.6/bin/riscv32-esp-elf-gcc-ranlib-"
     found: "/Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib"
     search_context:
@@ -3780,8 +3780,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-nXKESc"
-      binary: "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-nXKESc"
+      source: "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-nXKESc"
+      binary: "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-nXKESc"
     cmakeVariables:
       CMAKE_C_FLAGS: "-march=rv32imc_zicsr_zifencei "
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -3791,7 +3791,7 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-nXKESc'
+        Change Dir: '/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-nXKESc'
         
         Run Build Command(s): /opt/anaconda3/bin/ninja -v cmTC_520bc
         [1/2] /Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc   -march=rv32imc_zicsr_zifencei     -v -o CMakeFiles/cmTC_520bc.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
@@ -3877,7 +3877,7 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-nXKESc']
+        ignore line: [Change Dir: '/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-nXKESc']
         ignore line: []
         ignore line: [Run Build Command(s): /opt/anaconda3/bin/ninja -v cmTC_520bc]
         ignore line: [[1/2] /Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc   -march=rv32imc_zicsr_zifencei     -v -o CMakeFiles/cmTC_520bc.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
@@ -3992,8 +3992,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-ZjJZNU"
-      binary: "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-ZjJZNU"
+      source: "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-ZjJZNU"
+      binary: "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-ZjJZNU"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-march=rv32imc_zicsr_zifencei "
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -4004,7 +4004,7 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-ZjJZNU'
+        Change Dir: '/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-ZjJZNU'
         
         Run Build Command(s): /opt/anaconda3/bin/ninja -v cmTC_f03ad
         [1/2] /Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-g++   -march=rv32imc_zicsr_zifencei     -v -o CMakeFiles/cmTC_f03ad.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
@@ -4102,7 +4102,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-ZjJZNU']
+        ignore line: [Change Dir: '/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/build-c3/CMakeFiles/CMakeScratch/TryCompile-ZjJZNU']
         ignore line: []
         ignore line: [Run Build Command(s): /opt/anaconda3/bin/ninja -v cmTC_f03ad]
         ignore line: [[1/2] /Users/wandl/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-g++   -march=rv32imc_zicsr_zifencei     -v -o CMakeFiles/cmTC_f03ad.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]

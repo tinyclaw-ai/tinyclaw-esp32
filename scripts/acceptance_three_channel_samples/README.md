@@ -13,7 +13,7 @@
 
 1. **仅翻译 + 构建验收**（需本机安装 ESP-IDF 且 `idf.py` 在 PATH 中）：
    ```bash
-   cd octoclaw-esp32
+   cd tinyclaw-esp32
    ./scripts/acceptance_three_channel.sh
    ```
 
@@ -21,4 +21,4 @@
    - 向下行主题发送 `channel_event_inject.json` 中对应 channel 的一条消息（type/channel/event/payload 保持一致）。
    - 在设备或后台通过 MCP 发送 `mcp_tools_call_examples.json` 中的任一 `tools/call` 请求，确认上游收到 `channel_command` 并完成发送。
 
-协议细节见仓库根目录 `docs/nats.md`、`docs/octoclaw-agent-ops-guide.md`。
+协议细节见仓库根目录 `docs/nats.md`、`docs/tinyclaw-agent-ops-guide.md`。

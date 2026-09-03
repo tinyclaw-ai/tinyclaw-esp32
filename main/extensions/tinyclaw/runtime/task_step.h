@@ -1,6 +1,6 @@
 /**
  * @file task_step.h
- * @brief V2 任务编排：单步状态与步骤状态机（落点 extensions/octoclaw/runtime）
+ * @brief V2 任务编排：单步状态与步骤状态机（落点 extensions/tinyclaw/runtime）
  *
  * 用于 plan/step 消息的步骤追踪与状态回执，与 agent_lite、receipt_queue 协同；
  * 不改变 xiaozhi 主循环，仅扩展 runtime 能力。
@@ -15,7 +15,7 @@
 
 #include <cJSON.h>
 
-#include "extensions/octoclaw/core/octo_agent_types.h"
+#include "extensions/tinyclaw/core/octo_agent_types.h"
 
 namespace octo {
 

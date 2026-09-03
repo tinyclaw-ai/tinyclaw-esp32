@@ -17,13 +17,13 @@
 #include "settings.h"
 #include "lvgl_theme.h"
 #include "lvgl_display.h"
-#include "extensions/octoclaw/runtime/agent_lite.h"
-#include "extensions/octoclaw/profile/board_profile.h"
-#include "extensions/octoclaw/policy/capability_manifest.h"
-#include "extensions/octoclaw/policy/policy_guard.h"
-#include "extensions/octoclaw/policy/policy_store.h"
-#include "extensions/octoclaw/transport/receipt_queue.h"
-#include "extensions/octoclaw/audit/audit_log.h"
+#include "extensions/tinyclaw/runtime/agent_lite.h"
+#include "extensions/tinyclaw/profile/board_profile.h"
+#include "extensions/tinyclaw/policy/capability_manifest.h"
+#include "extensions/tinyclaw/policy/policy_guard.h"
+#include "extensions/tinyclaw/policy/policy_store.h"
+#include "extensions/tinyclaw/transport/receipt_queue.h"
+#include "extensions/tinyclaw/audit/audit_log.h"
 #include "extensions/channels/openclaw_extension_catalog.h"
 #include "extensions/channels/device_pair_service.h"
 #include "extensions/channels/thread_ownership_service.h"
@@ -384,8 +384,8 @@ void McpServer::AddUserOnlyTools() {
             });
     }
 
-    AddUserOnlyTool("self.system.get_octoclaw_profile",
-        "Get OctoClaw board profile, policy snapshot and runtime diagnostics",
+    AddUserOnlyTool("self.system.get_tinyclaw_profile",
+        "Get TinyClaw board profile, policy snapshot and runtime diagnostics",
         PropertyList(),
         [](const PropertyList& properties) -> ReturnValue {
             (void)properties;
@@ -400,8 +400,8 @@ void McpServer::AddUserOnlyTools() {
             return json;
         });
 
-    AddUserOnlyTool("self.system.update_octoclaw_policy",
-        "Update OctoClaw policy snapshot. "
+    AddUserOnlyTool("self.system.update_tinyclaw_policy",
+        "Update TinyClaw policy snapshot. "
         "Args: policy(JSON string), fields: policy_version/risk_threshold/emergency_stop/tool_whitelist/feature_mask",
         PropertyList({
             Property("policy", kPropertyTypeString)

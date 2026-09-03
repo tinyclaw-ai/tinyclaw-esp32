@@ -3,9 +3,9 @@
 
 #include <string>
 
-#include "extensions/octoclaw/policy/capability_manifest.h"
-#include "extensions/octoclaw/core/octo_agent_types.h"
-#include "extensions/octoclaw/policy/policy_store.h"
+#include "extensions/tinyclaw/policy/capability_manifest.h"
+#include "extensions/tinyclaw/core/octo_agent_types.h"
+#include "extensions/tinyclaw/policy/policy_store.h"
 
 namespace octo {
 

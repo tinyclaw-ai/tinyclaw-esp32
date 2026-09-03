@@ -45,8 +45,8 @@ bool NatsProtocol::LoadSettings() {
     Settings settings("nats", false);
     url_ = settings.GetString("url");
     token_ = settings.GetString("token");
-    publish_subject_ = settings.GetString("publish_subject", "octoclaw.device.up");
-    subscribe_subject_ = settings.GetString("subscribe_subject", "octoclaw.device.down");
+    publish_subject_ = settings.GetString("publish_subject", "tinyclaw.device.up");
+    subscribe_subject_ = settings.GetString("subscribe_subject", "tinyclaw.device.down");
     audio_publish_subject_ = settings.GetString("audio_publish_subject");
     audio_subscribe_subject_ = settings.GetString("audio_subscribe_subject");
     queue_group_ = settings.GetString("queue_group");

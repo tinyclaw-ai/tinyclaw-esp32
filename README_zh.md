@@ -127,8 +127,8 @@ v1 的稳定版本为 1.9.2，可以通过 `git checkout v1` 来切换到 v1 版
 - [MQTT + UDP 混合通信协议文档](docs/mqtt-udp.md)
 - [一份详细的 WebSocket 通信协议文档](docs/websocket.md)
 - [NATS over WebSocket 通信协议文档](docs/nats.md)
-- [OctoClaw 全板型档位矩阵](docs/octoclaw-board-tier-matrix.md) - 131 个板型的 Lite/Standard/Pro 分级与默认能力
-- [OctoClaw 运维与开关手册](docs/octoclaw-agent-ops-guide.md) - 策略快照、错误码、补偿队列与诊断入口
+- [TinyClaw 全板型档位矩阵](docs/tinyclaw-board-tier-matrix.md) - 131 个板型的 Lite/Standard/Pro 分级与默认能力
+- [TinyClaw 运维与开关手册](docs/tinyclaw-agent-ops-guide.md) - 策略快照、错误码、补偿队列与诊断入口
 - [OpenClaw 扩展翻译矩阵](docs/openclaw-extension-translation-matrix.md) - 37 个扩展到 ESP32 的翻译骨架清单
 
 ## 大模型配置

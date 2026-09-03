@@ -12,14 +12,14 @@ CapabilityManifest::CapabilityManifest() {
     risk_levels_.emplace("self.screen.snapshot", 2);
     risk_levels_.emplace("self.screen.preview_image", 2);
     risk_levels_.emplace("self.camera.take_photo", 2);
-    risk_levels_.emplace("self.system.update_octoclaw_policy", 2);
+    risk_levels_.emplace("self.system.update_tinyclaw_policy", 2);
 
     risk_levels_.emplace("self.audio_speaker.set_volume", 1);
     risk_levels_.emplace("self.screen.set_brightness", 1);
     risk_levels_.emplace("self.screen.set_theme", 1);
     risk_levels_.emplace("self.get_device_status", 1);
     risk_levels_.emplace("self.get_system_info", 1);
-    risk_levels_.emplace("self.system.get_octoclaw_profile", 1);
+    risk_levels_.emplace("self.system.get_tinyclaw_profile", 1);
 }
 
 int CapabilityManifest::GetRiskLevel(const std::string& tool_name) const {

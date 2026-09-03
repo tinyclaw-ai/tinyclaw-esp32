@@ -5,7 +5,7 @@
 ## 目录约定
 
 - `main/extensions/channels`：外部渠道接入扩展（如 douyin/meituan/rednode/kuaishou/amap 的 ESP32 适配）
-- `main/extensions/octoclaw`：设备侧治理扩展（板型、策略、运行时、传输补偿）
+- `main/extensions/tinyclaw`：设备侧治理扩展（板型、策略、运行时、传输补偿）
 
 其中 `main/extensions/channels` 已支持从 `research/openclaw/extensions` 自动翻译全量骨架（当前 37 项）。
 

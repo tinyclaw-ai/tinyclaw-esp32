@@ -206,4 +206,4 @@ components:
   - name: "xtensa"
     path: "/Users/wandl/esp/esp-idf/components/xtensa"
   - name: "main"
-    path: "/Users/wandl/workspaces/workspace-partme-ai/octoclaw-esp32/main"
+    path: "/Users/wandl/workspaces/workspace-partme-ai/tinyclaw-esp32/main"

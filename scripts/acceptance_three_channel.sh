@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 三通道闭环最小验收脚本（Feishu / Mattermost / Nostr）
 # 在有 ESP-IDF 环境的机器上可一次性完成：翻译检查 + C3/S3 构建 + 样例说明
-# 用法：从 octoclaw-esp32 仓库根目录执行 ./scripts/acceptance_three_channel.sh
+# 用法：从 tinyclaw-esp32 仓库根目录执行 ./scripts/acceptance_three_channel.sh
 
 set -euo pipefail
 

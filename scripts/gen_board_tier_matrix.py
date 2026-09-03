@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 根据 Kconfig.projbuild 里的 BOARD_TYPE 选择项生成：
-1) main/extensions/octoclaw/profile/board_tier_matrix.generated.h
-2) docs/octoclaw-board-tier-matrix.md
+1) main/extensions/tinyclaw/profile/board_tier_matrix.generated.h
+2) docs/tinyclaw-board-tier-matrix.md
 
 支持 --check 模式做一致性校验。
 """
@@ -32,11 +32,11 @@ HEADER_PATH = (
     ROOT
     / "main"
     / "extensions"
-    / "octoclaw"
+    / "tinyclaw"
     / "profile"
     / "board_tier_matrix.generated.h"
 )
-DOC_PATH = ROOT / "docs" / "octoclaw-board-tier-matrix.md"
+DOC_PATH = ROOT / "docs" / "tinyclaw-board-tier-matrix.md"
 
 
 def normalize_space(text: str) -> str:
@@ -202,7 +202,7 @@ def render_doc(entries: Iterable[BoardEntry]) -> str:
         chip_count[item.chip] = chip_count.get(item.chip, 0) + 1
 
     lines = [
-        "# OctoClaw 全板型档位矩阵（自动生成）",
+        "# TinyClaw 全板型档位矩阵（自动生成）",
         "",
         "> 本文件由 `scripts/gen_board_tier_matrix.py` 生成，请勿手工编辑。",
         "",
@@ -253,7 +253,7 @@ def write_or_check(path: Path, content: str, check: bool) -> bool:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="生成 OctoClaw 板型档位矩阵")
+    parser = argparse.ArgumentParser(description="生成 TinyClaw 板型档位矩阵")
     parser.add_argument("--check", action="store_true", help="仅校验，不写文件")
     args = parser.parse_args()
 

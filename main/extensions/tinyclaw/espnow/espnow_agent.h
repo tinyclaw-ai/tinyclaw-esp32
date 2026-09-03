@@ -1,6 +1,6 @@
 /**
  * @file espnow_agent.h
- * @brief V2 ESP-NOW 设备协同占位（落点 extensions/octoclaw/espnow）
+ * @brief V2 ESP-NOW 设备协同占位（落点 extensions/tinyclaw/espnow）
  *
  * 当 CONFIG_OCTO_ENABLE_ESP_NOW_AGENT 时编译；与 WebSocket 主链并存，
  * 用于设备间任务分发/回收与状态同步，具体实现后续按 V2 PRD 扩展。

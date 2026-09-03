@@ -6,7 +6,7 @@
 
 #include <cJSON.h>
 
-#include "extensions/octoclaw/core/octo_agent_types.h"
+#include "extensions/tinyclaw/core/octo_agent_types.h"
 
 namespace octo {
 

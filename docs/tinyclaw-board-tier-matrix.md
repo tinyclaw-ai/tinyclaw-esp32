@@ -1,4 +1,4 @@
-# OctoClaw 全板型档位矩阵（自动生成）
+# TinyClaw 全板型档位矩阵（自动生成）
 
 > 本文件由 `scripts/gen_board_tier_matrix.py` 生成，请勿手工编辑。
 

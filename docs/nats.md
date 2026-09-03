@@ -19,11 +19,11 @@
   "nats": {
     "url": "wss://nats.example.com/ws",
     "token": "your-token",
-    "publish_subject": "octoclaw.device.up",
-    "subscribe_subject": "octoclaw.device.down",
-    "audio_publish_subject": "octoclaw.device.up.audio",
-    "audio_subscribe_subject": "octoclaw.device.down.audio",
-    "queue_group": "octoclaw-workers",
+    "publish_subject": "tinyclaw.device.up",
+    "subscribe_subject": "tinyclaw.device.down",
+    "audio_publish_subject": "tinyclaw.device.up.audio",
+    "audio_subscribe_subject": "tinyclaw.device.down.audio",
+    "queue_group": "tinyclaw-workers",
     "version": 3
   }
 }
