@@ -24,7 +24,7 @@ class BoardTierMatrixTests(unittest.TestCase):
         )
 
     def test_current_board_matrix_covers_all_unique_board_symbols(self):
-        entries = MATRIX.parse_board_entries(MATRIX.KCONFIG_PATH.read_text())
+        entries = MATRIX.parse_board_entries(MATRIX.KCONFIG_PATH.read_text(encoding="utf-8"))
         self.assertEqual(len(entries), 161)
         self.assertEqual(len({entry.symbol for entry in entries}), len(entries))
         self.assertNotIn("UNKNOWN", {entry.chip for entry in entries})
