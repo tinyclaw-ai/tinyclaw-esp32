@@ -109,6 +109,8 @@ def detect_chip(depends_expr: str) -> str:
     expr = depends_expr.upper()
     if "IDF_TARGET_ESP32P4" in expr:
         return "ESP32P4"
+    if "IDF_TARGET_ESP32S31" in expr:
+        return "ESP32S31"
     if "IDF_TARGET_ESP32S3" in expr:
         return "ESP32S3"
     if "IDF_TARGET_ESP32C6" in expr:
@@ -129,7 +131,7 @@ def to_tier_and_features(chip: str) -> tuple[str, str]:
             "kFeaturePolicyGuard | kFeatureReceiptCompensation | "
             "kFeatureLocalAgent | kFeatureMcpExtFields | kFeatureEspNowAgent",
         )
-    if chip == "ESP32S3":
+    if chip in {"ESP32S3", "ESP32S31"}:
         return (
             "standard",
             "kFeaturePolicyGuard | kFeatureReceiptCompensation | "
@@ -207,7 +209,7 @@ def render_doc(entries: Iterable[BoardEntry]) -> str:
         "> 本文件由 `scripts/gen_board_tier_matrix.py` 生成，请勿手工编辑。",
         "",
         f"- 板型总数：**{len(entries)}**",
-        "- 档位规则：Lite=ESP32/C3/C5/C6，Standard=ESP32S3，Pro=ESP32P4",
+        "- 档位规则：Lite=ESP32/C3/C5/C6，Standard=ESP32S3/S31，Pro=ESP32P4",
         "",
         "## 芯片分布统计",
         "",
@@ -259,8 +261,8 @@ def main() -> int:
 
     text = KCONFIG_PATH.read_text(encoding="utf-8")
     entries = parse_board_entries(text)
-    if len(entries) != 131:
-        print(f"[ERROR] BOARD_TYPE 数量异常，期望 131，实际 {len(entries)}")
+    if len(entries) != 161:
+        print(f"[ERROR] BOARD_TYPE 数量异常，期望 161，实际 {len(entries)}")
         return 2
 
     header = render_header(entries)
