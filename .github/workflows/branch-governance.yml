@@ -1,0 +1,40 @@
+name: Branch governance
+
+on:
+  push:
+    branches: ['**']
+  create:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: branch-governance-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  govern:
+    if: github.event_name != 'create' || github.event.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Load trusted governance from main
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Test branch naming and integration
+        run: |
+          node --test .github/tests/branch_governance.test.cjs
+          python3 -m unittest discover -s .github/tests -p 'test_*.py' -v
+      - name: Enforce names and integrate feature branches
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
+        with:
+          script: |
+            const {govern} = require('./.github/scripts/branch_governance.cjs');
+            await govern({github, context, core});

@@ -1,0 +1,17 @@
+{
+  "name": "Allowed branch names",
+  "target": "branch",
+  "enforcement": "active",
+  "bypass_actors": [],
+  "conditions": {
+    "ref_name": {
+      "include": ["~ALL"],
+      "exclude": [
+        "refs/heads/main", "refs/heads/dev",
+        "refs/heads/feature/*", "refs/heads/feature/**/*",
+        "refs/heads/fix/*", "refs/heads/fix/**/*"
+      ]
+    }
+  },
+  "rules": [{"type": "creation"}, {"type": "update"}]
+}
