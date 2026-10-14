@@ -1,6 +1,7 @@
 #include "nats_protocol.h"
 
 #include "assets/lang_config.h"
+#include "audio/audio_service.h"
 #include "board.h"
 #include "settings.h"
 #include "system_info.h"
