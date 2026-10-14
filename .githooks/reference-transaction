@@ -1,0 +1,17 @@
+#!/bin/sh
+# 在引用事务提交前校验本地分支；允许删除旧分支，不限制标签或远端跟踪引用。
+[ "$1" = prepared ] || exit 0
+while read -r old_oid new_oid ref_name; do
+    case "$new_oid" in
+        *[!0]*) ;;
+        *) continue ;;
+    esac
+    case "$ref_name" in
+        refs/heads/main|refs/heads/dev|refs/heads/feature/?*|refs/heads/fix/?*) ;;
+        refs/heads/*)
+            echo "branch policy: only main, dev, feature/<name>, fix/<name> are allowed: $ref_name" >&2
+            exit 1
+            ;;
+    esac
+done
+exit 0
